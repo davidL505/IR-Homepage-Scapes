@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>IR Homepage Scapes</title>
+    <link rel="stylesheet" href="ui/style.css" />
+  </head>
+<body>
+
+    <!-- ========== WORLD SELECT SCREEN ========== -->
+    <div id="world-select" class="screen active">
+          <div class="select-header">
+                  <h1 class="logo">IR <span>Homepage</span> Scapes</h1>h1>
+                <p class="tagline">Choose your reality</p>p>
+          </div>div>
+        <div class="world-grid" id="worldGrid"></div>div>
+    </div>div>
+
+  <!-- ========== EXPLORER SCREEN ========== -->
+  <div id="explorer-screen" class="screen">
+      <canvas id="world-canvas"></canvas>canvas>
+  
+      <!-- HUD -->
+      <div id="hud">
+            <button id="back-btn" onclick="IRScapes.goHome()">&#8592; Worlds</button>button>
+            <div id="world-label"></div>div>
+            <div id="interact-hint" class="hidden">Click to interact</div>div>
+            <div id="quality-toggle">
+                    <button onclick="IRScapes.setQuality('low')" title="Low">&#9632;</button>button>
+                    <button onclick="IRScapes.setQuality('medium')" title="Med">&#9632;&#9632;</button>button>
+                    <button onclick="IRScapes.setQuality('high')" class="active" title="High">&#9632;&#9632;&#9632;</button>button>
+            </div>div>
+      </div>div>
+  </div>div>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+
+  <!-- Core engine -->
+  <script src="engine/core.js"></script>
+  <script src="engine/camera.js"></script>
+  <script src="engine/terrain.js"></script>
+  <script src="engine/animals.js"></script>
+  <script src="engine/atmosphere.js"></script>
+  <script src="engine/particles.js"></script>
+  <script src="engine/aurora.js"></script>
+  <script src="engine/water.js"></script>
+
+  <!-- Worlds -->
+  <script src="worlds/arctic-tundra.js"></script>
+  <script src="worlds/northern-lights.js"></script>
+  <script src="worlds/japanese-forest.js"></script>
+  <script src="worlds/amazon-rainforest.js"></script>
+  <script src="worlds/atlantic-ocean.js"></script>
+  <script src="worlds/african-savanna.js"></script>
+  <script src="worlds/ancient-rome.js"></script>
+  <script src="worlds/futuristic-tokyo.js"></script>
+  <script src="worlds/himalayan-peaks.js"></script>
+  <script src="worlds/sahara-night.js"></script>
+  <script src="worlds/nordic-fjords.js"></script>
+  <script src="worlds/deep-space.js"></script>
+
+  <!-- UI -->
+  <script src="ui/worldSelect.js"></script>
+  <script src="ui/hud.js"></script>
+
+  <!-- Boot -->
+  <script src="engine/boot.js"></script>
+
+</body>
+</html>html></span>
+</body></title>
+  </head>
